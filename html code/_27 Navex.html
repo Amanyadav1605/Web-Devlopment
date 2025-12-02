@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title> Navigation Bar Example</title>
+        <style>/* General Reset */
+        body, ul,li {
+            margin:0;
+            padding: 0;
+            list-style : none ;
+            font-family: Arial, sans-serif;
+
+
+        }
+        /* Navigation Bar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 10px 20px;
+            color: white;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+
+        }
+        .nav-link li {
+            position: relative;
+        }
+        .nav-link a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 15px;
+            transition: background-colour 0.3s ease, color 0.3 ease;
+        }
+        .nav-link a:hover {
+            background-color:white;
+            border-radius:5px
+        }
+        .nav-link {
+             display: flex;
+             flex-direction: row;
+             gap: 10px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo"> My Website</div>
+            <ul class="nav-links">
+                <li><a href="#"> Home</a></li>
+                <li> <a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>

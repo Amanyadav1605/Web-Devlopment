@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>JavaScript Example</title>
+        <style>
+            body {
+                font-family: Arial,sans-serif;
+                text-align: center;
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Click the Button</h1>
+        <button id="myButton">CLick Me!</button>
+        <p id="output"></p>
+        <script>
+            // JavaScript Code
+            const button = document.getElementById('myButton');
+            const output =document.getElementById('output');
+            button.addEventListener('click', () => {
+                output.textContent = "Hello user clicked the button!";
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Dropdown Example</title>
+        <style>
+             body ,ul,li
+             {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                font-family: Arial,sans-serif;
+             }
+             /* Navigation Bar Styling*/
+             .navbar {
+                background-color:black;
+                padding: 10px 20px }
+                .nav-link a {
+                    text-decoration: none;
+                    color:white;
+                    padding: 8px 15px;
+                    transition: background-colour 0.3 ease;}
+                    .logo {
+                       font-size: 1.5em;
+                        font-weight: bold;}
+                              
+                .nav-link a:hover {
+                    background-color:black;
+                    border-radius: 5px;
+                }
+                /*Dropdown Menu Styling */
+                .dropdown {
+                    position: relative;
+                }
+                .dropdown-menu {
+                    display: none;/*Hidden by default */
+                    position: absolute;
+                    top: 100%;/*position below the parent */
+                    left: 0;
+                    background-color: black;
+                    padding: 10px 0;
+                    border-radius: 5px;
+                    min-width: 150;
+                    left: 0;
+                    background-color:lavender;
+                    padding: 10px 0;
+                    border-radius: 5px;
+                    min-width: 150px;
+                }
+                .dropdown-menu li {
+                    padding: 5px 20px;
+                }
+                .dropdown-menu li a {
+                    color:black;
+                    padding: 5px;
+                    display: block;
+                    text-decoration: none;
+                }
+                .dropdown-menu li a:hover {
+                    background-color: black;
+                    border-radius: 5px;
+                }
+                /* Show Dropdown on Hover*/
+                .dropdown:hover .dropdown-menu {
+                    display: block;
+                }
+                /* Responsive Design */
+                 @media(max-width:768px) {
+                    .nav-links {
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+                }
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo"> My Website</div>
+            <ul class="nav-link">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Service</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">SEO</a></li>
+                        <li><a href="#">Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"> Contact</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>

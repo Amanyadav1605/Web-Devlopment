@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>getElementById Example</title>
+    </head>
+    <body>
+        <h1 id="heading">Hello, World!</h1>
+        <button onclick="changeText()">Change Text</button>
+
+        <script> 
+            function changeText() {
+                const heading = document.getElementById("heading");
+                heading.textContent = "Text Changed!";
+            }
+        </script>
+    </body>
+</html>

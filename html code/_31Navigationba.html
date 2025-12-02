@@ -1,0 +1,97 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <meta Name="viewport" content="width-device-width,initial-scale-1.0">
+           <title>Navigation ba example</title>
+           <style>/*general reset*/
+           body,ul,li{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: arial, sans-serif;
+         }
+         /*Navigation bar styling*/
+         .navbar{
+            background-color: #333;
+            padding: 10px 20px;
+         }
+         .nav-links{
+            display: flex;
+            gap: 20px;
+         }
+         .nav-links a{
+            text-decoration: none;
+            color: white;
+            padding: 8px 15px;
+            transition: background-color 0.3s ease;
+         }
+         .nav-links a:hover{
+            background-color: burlywood;
+            border-radius: 5px;
+         }
+         /*Dropdown Menu styling*/
+         .dropdown{
+            position: relative;
+         }
+         .dropdown-menu{
+            display: none;/*Hidden by default*/
+            position: relative;
+         }
+         .dropdown-menu{
+            display: none;/*Hidden by default*/
+            position: absolute;
+            top: 100%/*Position below the parent*/
+            left 0;
+            background-color: black;
+            padding: 10px0;
+            border-radius: 5px;
+            min-width: 150px;
+
+         }
+         .dropdown-menu li{
+            padding: 5px 20px;
+         }
+         .dropdown-menu li a{
+            color: wheat;
+            padding: 5px;
+            display: block;
+            text-decoration:none;
+         }
+         .dropdown-menu li a.hover{
+            background-color: #555;
+            border-radius: 5px;
+         }
+         /* show dropdown on hover*/
+         .dropdown:hover.dropdown-menu{
+            display: block;
+         } 
+
+
+         /* Responsive design*/
+         @media(max-width:768px){
+            .nav-links{
+               flex-direction: column;
+               gap: 10px;
+            }
+         }
+         </style>
+    </head>
+    <body>
+      <nav class="navbar">
+         <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown">
+               <a href="#" class="dropdown-toggle">services</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Web design</a></li>
+                  <li><a href="#">SEO</a></li>
+                  <li><a href="#">Marketing</a></li> 
+               </ul>
+            </li>
+         </ul>
+            <li><a href="#">Contact</a></li>
+         </ul>
+      </nav>
+    </body>
+</html>

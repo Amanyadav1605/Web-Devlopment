@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Input Example
+        </title>
+    </head>
+    <body>
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name">
+        <button onclick="showName()">Submit</button>
+        <p id="output"></p>
+
+        <script>
+            function showName() {
+                const nameInput = document.getElementById("name");
+                const output = document.getElementById("output");
+                output.textContent = "Hello,"+ nameInput.value+"!"; 
+            }
+        </script>
+    </body>
+</html>

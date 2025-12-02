@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>Compete Example</title>
+        <style>
+            body {
+                font-family: Arial,sans-serif;
+                text-align: center;
+                margin-top: 50px;
+                background-color: #e0f7fa;
+            }
+            h1 {
+                color: #00796b;
+            }
+            button {
+                padding: 10px 20px;
+                background-color: #00796b;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #004d40;
+            
+            }
+            p {
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Interactive Web Page</h1>
+        <button id="changeColorButton">Change Background Color</button>
+        <p id="instruction">Click the button to see the magic!</p>
+        <script>
+            const button = document.getElementById('changeColorButton');
+            const body = document.body;
+            button.addEventListener('click', () =>  {
+                const color = ["black" ,'green', "pink", "red"]; 
+                const randomColor = color[Math.floor(Math.random()* colors.length)];
+                body.style.backgrounColor = randomColor;
+            });
+        </script>
+    </body>
+</html>    
