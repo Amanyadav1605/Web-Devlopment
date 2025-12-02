@@ -1,0 +1,7 @@
+let person = new Object();
+person.name ="John";
+person.age =30;
+person.greet = function() {
+    console.log("Hello,"+this.name);
+};
+person.greet(); //"Hello,John"
