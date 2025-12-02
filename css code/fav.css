@@ -1,0 +1,13 @@
+h1{
+    background-image: url("Basic-HTML-Codes-.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: aquamarine;
+    height: 70vh;
+}
+p
+{
+ background-color:palevioletred;
+ color: blueviolet;
+}

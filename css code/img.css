@@ -1,0 +1,15 @@
+
+      h1 {   
+        background-image:url("spiderman-background");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align : center;
+        color: blue;
+        height: 60ph;;
+    }
+    p 
+    {
+        background-color: brown;
+        color:  lightgreen;
+    }
